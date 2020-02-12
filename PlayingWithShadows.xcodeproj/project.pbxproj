@@ -13,6 +13,10 @@
 		E0351BDC23F40FD2007EA467 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E0351BDB23F40FD2007EA467 /* libglfw.3.3.dylib */; };
 		E0351BDE23F4100C007EA467 /* libSDL2-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E0351BDD23F4100C007EA467 /* libSDL2-2.0.0.dylib */; };
 		E0351BE023F410A4007EA467 /* libassimp.5.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E0351BDF23F410A4007EA467 /* libassimp.5.0.0.dylib */; };
+		E0351BE323F41354007EA467 /* engine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0351BE123F41354007EA467 /* engine.cpp */; };
+		E0351BE623F413AE007EA467 /* input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0351BE423F413AE007EA467 /* input.cpp */; };
+		E0351BE923F413FA007EA467 /* profiling.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0351BE723F413FA007EA467 /* profiling.cpp */; };
+		E0351BEC23F41421007EA467 /* util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0351BEA23F41421007EA467 /* util.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +39,14 @@
 		E0351BDB23F40FD2007EA467 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../usr/local/Cellar/glfw/3.3.2/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
 		E0351BDD23F4100C007EA467 /* libSDL2-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2-2.0.0.dylib"; path = "../../../../../usr/local/Cellar/sdl2/2.0.10/lib/libSDL2-2.0.0.dylib"; sourceTree = "<group>"; };
 		E0351BDF23F410A4007EA467 /* libassimp.5.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libassimp.5.0.0.dylib; path = ../../../../../usr/local/Cellar/assimp/5.0.1/lib/libassimp.5.0.0.dylib; sourceTree = "<group>"; };
+		E0351BE123F41354007EA467 /* engine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = engine.cpp; path = Core/engine.cpp; sourceTree = "<group>"; };
+		E0351BE223F41354007EA467 /* engine.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = engine.hpp; path = Core/engine.hpp; sourceTree = "<group>"; };
+		E0351BE423F413AE007EA467 /* input.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = input.cpp; path = Core/input.cpp; sourceTree = "<group>"; };
+		E0351BE523F413AE007EA467 /* input.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = input.hpp; path = Core/input.hpp; sourceTree = "<group>"; };
+		E0351BE723F413FA007EA467 /* profiling.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = profiling.cpp; path = Core/profiling.cpp; sourceTree = "<group>"; };
+		E0351BE823F413FA007EA467 /* profiling.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = profiling.hpp; path = Core/profiling.hpp; sourceTree = "<group>"; };
+		E0351BEA23F41421007EA467 /* util.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = util.cpp; path = Core/util.cpp; sourceTree = "<group>"; };
+		E0351BEB23F41421007EA467 /* util.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = util.hpp; path = Core/util.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +86,14 @@
 			isa = PBXGroup;
 			children = (
 				E0351BCF23F40E05007EA467 /* main.cpp */,
+				E0351BE123F41354007EA467 /* engine.cpp */,
+				E0351BE223F41354007EA467 /* engine.hpp */,
+				E0351BE423F413AE007EA467 /* input.cpp */,
+				E0351BE523F413AE007EA467 /* input.hpp */,
+				E0351BE723F413FA007EA467 /* profiling.cpp */,
+				E0351BE823F413FA007EA467 /* profiling.hpp */,
+				E0351BEA23F41421007EA467 /* util.cpp */,
+				E0351BEB23F41421007EA467 /* util.hpp */,
 			);
 			path = PlayingWithShadows;
 			sourceTree = "<group>";
@@ -146,7 +166,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0351BE923F413FA007EA467 /* profiling.cpp in Sources */,
 				E0351BD023F40E05007EA467 /* main.cpp in Sources */,
+				E0351BE323F41354007EA467 /* engine.cpp in Sources */,
+				E0351BEC23F41421007EA467 /* util.cpp in Sources */,
+				E0351BE623F413AE007EA467 /* input.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
